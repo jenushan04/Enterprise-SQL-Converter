@@ -1,0 +1,5 @@
+{
+  "name": "Enterprise SQL Converter",
+  "description": "Professional MySQL to PostgreSQL migration assistant powered by Gemini. Converts schema, data, and logic with enterprise-grade precision.",
+  "requestFramePermissions": []
+}
