@@ -1,4 +1,4 @@
-import { Component, signal, inject, computed } from '@angular/core';
+import { Component, signal, inject, computed, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { SqlConverterService, TableDefinition, ColumnAddition } from './services/sql-converter.service';
@@ -10,7 +10,7 @@ type ViewState = 'converter' | 'offset-tool' | 'column-manager';
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './app.component.html',
-  changeDetection: 1 // OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
   private converterService = inject(SqlConverterService);
